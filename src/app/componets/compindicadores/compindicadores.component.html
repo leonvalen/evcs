@@ -1,0 +1,30 @@
+<p>indicadores a mostrar!
+</p>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-8" *ngFor="let datos of datosPrueba">
+      {{datos.title | capitalizar}}
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>#</th>
+        <th>Id</th>
+        <th>Titulo</th>
+        <th>Cuerpo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let datos of datosPrueba">
+        <th scope="row"></th>
+        <td>{{datos?.id}}</td>
+        <td>{{datos?.title | capitalizar}}</td>
+        <td>{{datos?.body | capitalizar}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
